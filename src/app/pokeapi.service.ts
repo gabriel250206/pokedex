@@ -15,4 +15,8 @@ export class PokeapiService {
     return this.http.get(`${this.apiUrl}?limit=${this.limit}&offset=${this.offset}`);
 
   }
+
+  getDetailPokemon(urlPokemon:any):Observable<any>{
+    return this.http.get(urlPokemon)
+  }
 }
