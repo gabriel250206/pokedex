@@ -19,4 +19,8 @@ export class PokeapiService {
   getDetailPokemon(urlPokemon:any):Observable<any>{
     return this.http.get(urlPokemon)
   }
+  getPokemonById(id: string): Observable<any> {
+    return this.http.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
+  }
+  
 }

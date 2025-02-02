@@ -22,6 +22,7 @@
         *ngFor="let item of listPokemones;index as i"
         (click)="handleDetail(item.url)"
         >
+        <ion-img [src]="handleImage(item)" alt="{{item.name}} image" style="width: 100px; height: 100px;"></ion-img>
           <ion-card-header>
             <ion-card-title>
               {{item.name}}
