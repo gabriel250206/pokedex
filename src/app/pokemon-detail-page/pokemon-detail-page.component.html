@@ -1,10 +1,10 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>{{ pokemon?.name | titlecase }}</ion-title>
+    <ion-title style="color: cyan;">{{ pokemon?.name | titlecase }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content >
   <div class="detail-container">
     <ion-img [src]="pokemon?.sprites?.front_default" alt="{{ pokemon?.name }}" style="height: 200px; width: auto;"></ion-img>
     <p><strong>Altura:</strong> {{ pokemon?.height }}</p>

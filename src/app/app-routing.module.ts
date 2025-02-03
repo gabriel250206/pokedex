@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { PokemonDetailPage } from './pokemon-detail-page/pokemon-detail-page.component';
+import { PokemonDetailPage } from './pokemon-detail-page/pokemon-detail-page.component';// aqui me marcaba error ya que no era la carpeta con el nombre correcto, le puso component al final y solo llegaba hasta page
 
 
 const routes: Routes = [
